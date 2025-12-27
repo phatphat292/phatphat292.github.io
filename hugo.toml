@@ -1,0 +1,92 @@
+baseURL = "https://huuphat.github.io/"
+languageCode = "vi-VN"
+title = "Hữu Phát Blog"
+theme = "hugo-profile"
+
+# ======================
+# MENU (THANH ĐIỀU HƯỚNG)
+# ======================
+[menu]
+  [[menu.main]]
+    name = "Về Tôi"
+    url = "/about"
+    weight = 1
+
+  [[menu.main]]
+    name = "Chứng chỉ"
+    url = "/certificates"
+    weight = 2
+
+  [[menu.main]]
+    name = "Đồ án"
+    url = "/projects"
+    weight = 3
+
+
+# ======================
+# CẤU HÌNH CHUNG (PARAMS)
+# ======================
+[params]
+  title = "Hữu Phát"
+  description = "Sinh viên Công nghệ Thông tin - HUTECH"
+  avatar = "avatar.jpg"
+  
+  # Link file CSS tùy chỉnh (Để ẩn ngày tháng như đã làm)
+  customCSS = ["css/custom.css"] 
+
+# ======================
+# PHẦN HERO (TRANG CHỦ)
+# ======================
+[params.hero]
+  enable = true
+  intro = "Xin chào, tôi là"
+  title = "Hữu Phát"
+  subtitle = "Chào mừng đến với blog cá nhân của tôi"
+
+
+# ======================
+# MẠNG XÃ HỘI
+# ======================
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/phatphat292"
+
+[[params.socialIcons]]
+  name = "facebook"
+  url = "https://www.facebook.com/huuu.phatt.868718"
+
+[[params.socialIcons]]
+  name = "email"
+  url = "mailto:phatpham581@gmail.com"
+
+
+# ======================
+# PHẦN LIÊN HỆ (SỬ DỤNG MARKDOWN)
+# ======================
+[params.contact]
+  enable = true
+  title = "Liên Hệ"
+  
+  # Dùng 3 dấu nháy đơn (''')
+  # Sử dụng cú pháp Markdown: [Tên hiển thị](Đường dẫn)
+  content = '''
+  Nếu bạn quan tâm đến profile của tôi hoặc muốn hợp tác, đừng ngần ngại kết nối nhé!
+  
+  📧 [Email: phatpham581@gmail.com](mailto:phatpham581@gmail.com)
+  
+  📘 [Facebook Cá Nhân](https://www.facebook.com/huuu.phatt.868718)
+  
+  🐙 [Github Profile](https://github.com/phatphat292)
+  '''
+  
+  email = "phatpham581@gmail.com"
+  btnName = "Gửi Email Ngay"
+
+
+# ======================
+# CẤU HÌNH KHÁC
+# ======================
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

@@ -1,0 +1,8 @@
+/* Ẩn toàn bộ dòng ngày tháng và thời gian đọc trên mọi trang */
+.post-meta {
+    display: none !important;
+}
+/* Ẩn luôn các thẻ tag nếu còn sót */
+.post-tags {
+    display: none !important;
+}
