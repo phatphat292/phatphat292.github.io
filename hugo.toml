@@ -21,9 +21,10 @@ theme = "hugo-profile"
     name = "Đồ án"
     url = "/projects"
     weight = 3
+    
   [[menu.main]]
     name = "Bài Viết"
-    url = "/posts" # Hoặc "#posts" nếu muốn trượt trên trang chủ
+    url = "/posts"
     weight = 4
 
 # ======================
@@ -34,7 +35,7 @@ theme = "hugo-profile"
   description = "Sinh viên Công nghệ Thông tin - HUTECH"
   avatar = "avatar.jpg"
   
-  # Link file CSS tùy chỉnh (Để ẩn ngày tháng như đã làm)
+  # Link file CSS tùy chỉnh
   customCSS = ["css/custom.css"] 
 
 # ======================
@@ -44,7 +45,17 @@ theme = "hugo-profile"
   enable = true
   intro = "Xin chào, tôi là"
   title = "Hữu Phát"
-  subtitle = "Chào mừng đến với blog cá nhân của tôi "
+  
+ # === ĐÃ SỬA LẠI ===
+  # Theme không nhận HTML, nên mình viết tách dòng bằng phím Enter bình thường
+  # Dùng 3 dấu nháy đơn (''') để xuống dòng được
+  subtitle = '''
+  Làm tệ việc nào đó là bước đầu tiên để giỏi được việc đó 🚀
+  '''
+  
+  # === ĐÃ SỬA: THÊM ẢNH BÊN PHẢI ===
+  # Nhớ làm Bước 1: Đổi tên ảnh thành hero.jpg và bỏ vào static/images/
+  image = "/hero.jpg"
 
 
 # ======================
@@ -64,14 +75,12 @@ theme = "hugo-profile"
 
 
 # ======================
-# PHẦN LIÊN HỆ (SỬ DỤNG MARKDOWN)
+# PHẦN LIÊN HỆ
 # ======================
 [params.contact]
   enable = true
   title = "Liên Hệ"
   
-  # Dùng 3 dấu nháy đơn (''')
-  # Sử dụng cú pháp Markdown: [Tên hiển thị](Đường dẫn)
   content = '''
   Nếu bạn quan tâm đến profile của tôi hoặc muốn hợp tác, đừng ngần ngại kết nối nhé!
   
@@ -99,10 +108,10 @@ theme = "hugo-profile"
 # ======================
 [params.posts]
   enable = true
-  title = "Các bài Blog gần đây"      # Tiêu đề to
-  subtitle = "Chia sẻ kiến thức về Mạng máy tính, DevOps và Lập trình" # Dòng chữ nhỏ bên dưới
-  recentPostsCount = 3                # Số lượng bài muốn hiện (nên để 3 hoặc 6 cho đẹp đội hình)
-  showDate = true                     # Hiện ngày đăng
-  showDescription = true              # Hiện mô tả ngắn
-  viewAllPost = true                  # Hiện nút "Xem tất cả"
-  viewAllPostText = "Xem tất cả →"    # Chữ trên nút
+  title = "Các bài Blog gần đây"      
+  subtitle = "Chia sẻ kiến thức về Mạng máy tính, DevOps và Lập trình"
+  recentPostsCount = 3                
+  showDate = true                     
+  showDescription = true              
+  viewAllPost = true                  
+  viewAllPostText = "Xem tất cả →"
