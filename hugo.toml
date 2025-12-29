@@ -21,7 +21,10 @@ theme = "hugo-profile"
     name = "Đồ án"
     url = "/projects"
     weight = 3
-
+  [[menu.main]]
+    name = "Bài Viết"
+    url = "/posts" # Hoặc "#posts" nếu muốn trượt trên trang chủ
+    weight = 4
 
 # ======================
 # CẤU HÌNH CHUNG (PARAMS)
@@ -41,7 +44,7 @@ theme = "hugo-profile"
   enable = true
   intro = "Xin chào, tôi là"
   title = "Hữu Phát"
-  subtitle = "Chào mừng đến với blog cá nhân của tôi"
+  subtitle = "Chào mừng đến với blog cá nhân của tôi "
 
 
 # ======================
@@ -90,3 +93,16 @@ theme = "hugo-profile"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+# ======================
+# CẤU HÌNH DANH SÁCH BÀI VIẾT (RECENT POSTS)
+# ======================
+[params.posts]
+  enable = true
+  title = "Các bài Blog gần đây"      # Tiêu đề to
+  subtitle = "Chia sẻ kiến thức về Mạng máy tính, DevOps và Lập trình" # Dòng chữ nhỏ bên dưới
+  recentPostsCount = 3                # Số lượng bài muốn hiện (nên để 3 hoặc 6 cho đẹp đội hình)
+  showDate = true                     # Hiện ngày đăng
+  showDescription = true              # Hiện mô tả ngắn
+  viewAllPost = true                  # Hiện nút "Xem tất cả"
+  viewAllPostText = "Xem tất cả →"    # Chữ trên nút
